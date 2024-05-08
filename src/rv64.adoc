@@ -73,7 +73,7 @@ copied into the vacated upper bits).
 (((RV64I, SRLIW)))
 (((RV64I, RV64I-only)))
 
-include::sail:execute[part=body,dedent,clause="SHIFTIOP(_,_,_,_)"]
+sail::execute[part=body,dedent,clause="SHIFTIOP(_,_,_,_)"]
 
 include::images/wavedrom/rv64i-slliw.adoc[]
 [[rv64i-slliw]]
@@ -83,7 +83,7 @@ defined but operate on 32-bit values and sign-extend their 32-bit
 results to 64 bits. SLLIW, SRLIW, and SRAIW encodings with
 _imm[5] &#8800; 0_ are reserved.
 
-include::sail:execute[part=body,dedent,clause="ADDIW(_,_,_)"]
+sail::execute[part=body,dedent,clause="SHIFTIWOP(_,_,_,_)"]
 
 
 [NOTE]

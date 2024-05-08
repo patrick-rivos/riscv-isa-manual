@@ -86,6 +86,7 @@ _imm[5] &#8800; 0_ are reserved.
 sail::execute[part=body,dedent,clause="SHIFTIWOP(_,_,_,_)"]
 
 
+
 [NOTE]
 ====
 Previously, SLLIW, SRLIW, and SRAIW with _imm[5] &#8800; 0_

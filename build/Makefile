@@ -34,7 +34,9 @@ ASCIIDOCTOR_OPTS := -a compress \
                     --require=asciidoctor-bibtex \
                     --require=asciidoctor-diagram \
                     --require=asciidoctor-mathematical \
-                    --trace
+					--require=asciidoctor-sail \
+                    --trace \
+					--verbose
 
 # Source directory
 SRCDIR := ../src

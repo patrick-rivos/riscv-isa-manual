@@ -50,6 +50,11 @@ immediate to register _rs1_ and produces the proper sign extension of a
 writes the sign extension of the lower 32 bits of register _rs1_ into
 register _rd_ (assembler pseudoinstruction SEXT.W).
 
+[source,sail]
+----
+include::sail:execute[from=sail-rv64,part=body,dedent,clause="ADDIW(_,_,_)"]
+----
+
 include::images/wavedrom/rv64i-slli.adoc[]
 [[rv64i-slli]]
 //.RV64I register-immediate (descr ADDIW) instructions
@@ -67,6 +72,8 @@ copied into the vacated upper bits).
 (((RV64I, SRLIW)))
 (((RV64I, RV64I-only)))
 
+sail::execute[from=sail-rv64,part=body,dedent,clause="SHIFTIOP(_,_,_,_)"]
+
 include::images/wavedrom/rv64i-slliw.adoc[]
 [[rv64i-slliw]]
 
@@ -74,6 +81,9 @@ SLLIW, SRLIW, and SRAIW are RV64I-only instructions that are analogously
 defined but operate on 32-bit values and sign-extend their 32-bit
 results to 64 bits. SLLIW, SRLIW, and SRAIW encodings with
 _imm[5] &#8800; 0_ are reserved.
+
+sail::execute[from=sail-rv64,part=body,dedent,clause="SHIFTW(_,_,_,_)"]
+
 
 [NOTE]
 ====

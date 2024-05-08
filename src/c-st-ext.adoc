@@ -310,7 +310,7 @@ only valid when _rd_&#x2260;x0 the code points with _rd_=x0 are reserved.
 
 C.LWSP SAIL Code:
 
-sail::execute[clause="RISCV_C_LWSP(_, _)",part=body,unindent]
+//include::sail:execute[part=body,unindent,clause="RISCV_C_LWSP(_, _)"]
 
 C.LDSP is an RV64C/RV128C-only instruction that loads a 64-bit value
 from memory into register _rd_. It computes its effective address by
